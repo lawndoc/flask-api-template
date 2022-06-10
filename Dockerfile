@@ -57,8 +57,6 @@ USER myuser
 
 # expose port
 EXPOSE 5000
-# mark CA store as volume (still need to specify host mountpoint at runtime)
-VOLUME $UPLOADS_DIR
 
 # make sure all messages always reach console
 ENV PYTHONUNBUFFERED=1
