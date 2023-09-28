@@ -8,7 +8,7 @@ FROM ubuntu:22.04 AS builder-image
 ARG DEBIAN_FRONTEND=noninteractive
 
 # install python
-RUN apt-get update && apt-get install --no-install-recommends -y python3.10 python3.10-dev python3.10-venv python3-pip python3-wheel build-essential && \
+RUN apt-get update && apt-get install --no-install-recommends -y python3.11 python3.11-dev python3.11-venv python3-pip python3-wheel build-essential && \
 	apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # create and activate virtual environment
